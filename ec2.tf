@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  for_each = toset(["Shrinidhi-1", "Shrinidhi-2", "Shrinidhi-3"])
+  for_each = toset(["Sudhama-1", "Sudhama-2", "Sudhama-3"])
 
   ami           = "ami-02f624c08a83ca16f"
   instance_type = "t2.micro"
-  key_name      = "Nidhi-server"
+  key_name      = "Dhama-server"
 
   tags = {
     Name = each.key
