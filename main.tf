@@ -1,17 +1,17 @@
-resource "aws_vpc" "shrinidhi_vpc" {
+resource "aws_vpc" "sudhama_vpc" {
   cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
   tags = {
-    Name = "Shrinidhi-vpc"
+    Name = "Sudhama-vpc"
   }
 }
 
-resource "aws_subnet" "shrinidhi_subnet" {
-  vpc_id            = aws_vpc.shrinidhi_vpc.id
+resource "aws_subnet" "sudhama_subnet" {
+  vpc_id            = aws_vpc.sudhama_vpc.id
   cidr_block        = var.subnet_cidr
   availability_zone = var.availability_zone
 
   tags = {
-    Name = "Shrinidhi-subnet"
+    Name = "Sudhama-subnet"
   }
 }
