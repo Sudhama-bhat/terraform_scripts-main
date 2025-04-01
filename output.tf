@@ -1,9 +1,9 @@
 output "vpc_id" {
   description = "The ID of the created VPC"
-  value       = aws_vpc.shrinidhi_vpc.id
+  value       = aws_vpc.sudhama_vpc.id
 }
 
 output "subnet_id" {
   description = "The ID of the created subnet"
-  value       = aws_subnet.shrinidhi_subnet.id
+  value       = aws_subnet.sudhama_subnet.id
 }
